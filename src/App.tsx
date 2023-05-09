@@ -1,12 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+
+import './App.css';
 
 function App() {
 
   return (
-    <div>
-      <p>Album Score</p>        
-    </div>
+    <main>
+            
+    </main>
   )
 }
 
