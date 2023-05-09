@@ -1,12 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
-
 import { Home } from './components/Home';
-import './App.css';
 
 function App() {
-
   return (
-    <main className='bg-red-400'>
+    <main>
       <Routes>
         <Route path='/' element={<Home />} />
       </Routes>            
@@ -14,4 +11,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
