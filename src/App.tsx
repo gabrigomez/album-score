@@ -6,7 +6,7 @@ import './App.css';
 function App() {
 
   return (
-    <main>
+    <main className='bg-red-400'>
       <Routes>
         <Route path='/' element={<Home />} />
       </Routes>            
