@@ -13,7 +13,7 @@ export const Home = () => {
   })
 
   return (
-    <div className='bg-cyan-300'>
+    <div className='flex justify-center'>
       <p>Home</p>
     </div>
   )
