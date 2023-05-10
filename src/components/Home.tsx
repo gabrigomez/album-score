@@ -2,13 +2,14 @@ import React, { useEffect } from 'react';
 
 export const Home = () => {
   useEffect(() => {
-    fetch('https://abum-rebiew-api.onrender.com/api/v1/albums')
-      .then((response) => {
-        if(response.ok) {
-          console.log(response);
-        }
-        throw new Error('Something went wrong');
-      })
+    const fetchAlbums = async() => {
+      const response = await fetch('https://abum-rebiew-api.onrender.com/api/v1/albums');
+      const data = await response.json();
+      if(response.ok) {
+        console.log(data);
+      }
+    }
+    fetchAlbums();
   })
 
   return (
