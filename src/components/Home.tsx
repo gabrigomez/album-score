@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Album } from './Album';
 
 export const Home = () => {
   const [albums, setAlbums] = useState([]);
@@ -18,8 +19,9 @@ export const Home = () => {
   });
 
   return (
-    <div className='flex justify-center'>
+    <div className='flex flex-col justify-center items-center'>
       <p>Home</p>
+      <Album />
     </div>
   )
 }
