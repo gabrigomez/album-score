@@ -1,6 +1,6 @@
-# Album Score 1.0 :man_office_worker: :computer:	
+# Album Score 1.0 	
 
-Aplicação para reviews de albums musicais
+Aplicação para reviews de albums musicais.
 
 ## Feats :star2:	
 
