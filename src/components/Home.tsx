@@ -3,8 +3,7 @@ import { Album } from './Album';
 
 export const Home = () => {
   const [albums, setAlbums] = useState([]);
-  console.log(albums);
-
+  
   const fetchAlbums = async() => {
     const response = await fetch('https://abum-rebiew-api.onrender.com/api/v1/albums');
     const data = await response.json();
@@ -21,7 +20,7 @@ export const Home = () => {
   return (
     <div className='flex flex-col justify-center items-center'>
       <p>Home</p>
-      <Album />
+      <Album albums={albums} />
     </div>
   )
 }

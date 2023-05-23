@@ -1,9 +1,18 @@
 import React from 'react';
 
-export const Album = () => {
+interface Album {
+  id?: number
+}
+interface Props {
+  albums: Array<Album>
+}
+
+export const Album: React.FC<Props> = ({albums}) => {
+  console.log(typeof(albums))
+  console.log(albums)
   return (
     <div>
-      <p>Album</p>
+      <p>Albums</p>
     </div>
   )
 }
